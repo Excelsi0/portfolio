@@ -1,0 +1,15 @@
+.btn {
+    height: 45px;
+    background-color: $main-color;
+    border-radius: 5px;
+    padding: 12px 25px;
+    color: #fff;
+    transition: all 0.2s linear;
+    &:hover {
+        box-shadow: 0 0 20px #d3d3d3;
+        transform: scale(1.05);
+    }
+    &:active {
+        transform: scale(1);
+    }
+}
