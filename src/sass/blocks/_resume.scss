@@ -1,15 +1,6 @@
 .resume {
     padding-top: 125px;
-    &__title {
-        text-align: center;
-        position: relative;
-        @include before_circle;
-        &:before {
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-    }
+
     &__subtitle {
         text-align: center;
     }
@@ -19,7 +10,6 @@
         padding: 0 65px;
         display: grid;
         grid-template-columns: repeat(2, 425px);
-        // grid-template-rows: repeat(2, minmax(129, auto));
         grid-auto-rows: minmax(129, auto);
         justify-content: space-between;
         row-gap: 45px;
@@ -94,5 +84,8 @@
         &-body {
             margin-top: 12px;
         }
+    }
+    &__item-location {
+        font-size: 12px;
     }
 }

@@ -4,6 +4,9 @@
     line-height: 167%;
     color: #000;
     z-index: 0;
+    &_fz-36 {
+        font-size: 36px;
+    }
     &_fz-16 {
         font-size: 16px;
     }
@@ -14,5 +17,14 @@
     }
     &_fz-14 {
         font-size: 14px;
+    }
+    &__section {
+        text-align: center;
+        position: relative;
+        @include before_circle;
+        &::before {
+            left: 50%;
+            transform: translateX(-50%);
+        }
     }
 }

@@ -1,21 +1,13 @@
 .skills {
     padding-top: 126px;
-    &__title {
-        text-align: center;
-        position: relative;
-        @include before_circle;
-        &::before {
-            left: 50%;
-            transform: translateX(-50%);
-        }
-    }
     &__subtitle {
         text-align: center;
     }
     &__wrap {
         margin-top: 60px;
         display: grid;
-        grid-template-columns: repeat(4, 270px);
+        justify-content: center;
+        grid-template-columns: repeat(auto-fit, 270px);
         grid-template-columns: repeat(2, minmax(270, auto));
         grid-auto-rows: minmax(270, auto);
         gap: 13px;
